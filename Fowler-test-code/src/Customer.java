@@ -11,14 +11,14 @@ class Customer {
     public void addRental(Rental arg) {
         rentals.addElement(arg);
     };
-    public String getName (){
+    public String getCustumerName(){
         return name;
     };
     public String statement() {
         double totalAmount = 0;
         int frequentRenterPoints = 0;
         Enumeration enum_rentals = rentals.elements();	    
-        String result = "Rental Record for " + this.getName() + "\n";
+        String result = "Rental Record for " + this.getCustumerName() + "\n";
         result += "\t" + "Title" + "\t" + "\t" + "Days" + "\t" + "Amount" + "\n";
 
         while (enum_rentals.hasMoreElements()) {
